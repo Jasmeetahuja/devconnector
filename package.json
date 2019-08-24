@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "jassi": "npm start --prefix jassi",
+    "dev": "concurrently \"npm run server\" \"npm run jassi\""
   },
   "author": "jassi",
   "license": "MIT",
