@@ -7,7 +7,8 @@
     "start": "node server",
     "server": "nodemon server",
     "jassi": "npm start --prefix jassi",
-    "dev": "concurrently \"npm run server\" \"npm run jassi\""
+    "dev": "concurrently \"npm run server\" \"npm run jassi\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false"
   },
   "author": "jassi",
   "license": "MIT",
